@@ -53,10 +53,14 @@ const Navbar = () => {
   <li><Link to="/explore" style={linkStyle}>Explore</Link></li>
   <li><Link to="/contact" style={linkStyle}>Contact</Link></li>
 </ul>
-        
+         <Link to="/rates" className="hover:text-yellow-600 font-semibold">
+  Live Rates
+</Link>
 
       </ul>
     </nav>
+   
+
   );
 };
 
