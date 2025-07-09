@@ -6,7 +6,7 @@ import About from './components/About';
 import Explore from './components/Explore';
 import Contact from './components/Contact';
 import Footer from './components/footer';
-
+import LiveRatesEmbed from './components/LiveRatesEmbed';
 function App() {
   return (
     <Router>
@@ -18,6 +18,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/explore" element={<Explore />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/rates" element={<LiveRatesEmbed />} />
           </Routes>
         </div>
       </main>
