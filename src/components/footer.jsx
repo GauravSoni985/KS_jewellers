@@ -4,8 +4,8 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer style={{
-      backgroundColor: '#f4f4f4',
-      padding: '25px 40px',
+      backgroundColor:'#aaaa93ff',
+      padding: '4px 10px',
       borderTop: '1px solid #ddd',
       display: 'flex',
       justifyContent: 'space-between',
@@ -17,7 +17,7 @@ const Footer = () => {
       {/* Left: Copyright */}
       <p style={{
         margin: 0,
-        color: '#666',
+        color: 'black',
         fontSize: '0.95rem'
       }}>
         © {new Date().getFullYear()} KS Jewellers — All Rights Reserved.
@@ -26,7 +26,7 @@ const Footer = () => {
       {/* Right: Designer credit */}
       <p style={{
         margin: 0,
-        color: '#bfa760',
+        color: 'black',
         fontWeight: '500',
         fontSize: '0.95rem'
       }}>

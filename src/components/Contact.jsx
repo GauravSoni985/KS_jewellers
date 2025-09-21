@@ -6,7 +6,7 @@ const Contact = () => {
       id="contact"
       style={{
         padding: '60px 20px',
-        backgroundColor: '#fdfcf9',
+        backgroundColor: 'rgba(255, 248, 225, 0.94)',
         textAlign: 'center',
         color: '#333',
       }}

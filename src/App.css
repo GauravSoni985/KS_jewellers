@@ -83,3 +83,18 @@ html, body {
   outline: 1px solid rgba(255, 0, 0, 0.2);
 }
 
+/* index.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;   /* ✅ Prevent blank right space */
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+}
+
