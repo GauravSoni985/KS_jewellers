@@ -1,8 +1,12 @@
 // src/components/Hero.jsx
-import React from 'react';
 import jewelleryImage from '../assets/image.png'; 
-
+import { useNavigate } from 'react-router-dom';
 const Home = () => {
+  const navigate = useNavigate();
+
+  const goToGallery = () => {
+    navigate('/Gallery'); // Navigate to gallery page
+  };
   return (
     <section
       id="home"
@@ -24,7 +28,7 @@ const Home = () => {
     >
       <div
         style={{
-          backgroundColor: 'rgba(0, 0, 0, 0.5)', // dark overlay for contrast
+          backgroundColor: 'rgba(0, 0, 0, 0.4)', // dark overlay for contrast
           padding: '40px',
           borderRadius: '10px',
           maxWidth: '800px',
@@ -36,7 +40,7 @@ const Home = () => {
         <p style={{ fontSize: '1.2rem', lineHeight: '1.6' }}>
           Where tradition meets elegance. Handcrafted silver jewellery restored and reimagined for every occasion.
         </p>
-        <button
+        <button onClick={goToGallery}
           style={{
             marginTop: '25px',
             padding: '10px 20px',

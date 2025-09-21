@@ -6,8 +6,9 @@ const Explore = () => {
       id="explore"
       style={{
         padding: '60px 20px',
-        backgroundColor: '#f9f9f9',
+        backgroundColor: 'rgba(255, 248, 225, 0.94)',
         textAlign: 'center',
+         overflow: 'hidden', // prevents margin collapsing
       }}
     >
       <h2 style={{ fontSize: '2.2rem', color: '#bfa760', marginBottom: '40px' }}>
@@ -25,12 +26,13 @@ const Explore = () => {
         {/* 💍 Buy Jewellery Card */}
         <div
           style={{
-            backgroundColor: '#fff',
+            backgroundColor: 'rgba(255, 248, 225, 0.79)',
             padding: '30px',
             borderRadius: '12px',
             maxWidth: '400px',
             boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
             transition: 'transform 0.3s',
+            marginBottom: 0 // ensures no extra margin escapes
           }}
         >
           <h3 style={{ fontSize: '1.5rem', color: '#333', marginBottom: '15px' }}>
@@ -43,7 +45,7 @@ const Explore = () => {
 
           <div
             style={{
-              backgroundColor: '#f5f5f5',
+              backgroundColor: 'white',
               padding: '10px 15px',
               borderRadius: '8px',
               color: '#444',
@@ -66,12 +68,13 @@ const Explore = () => {
         {/* ⚡ Electroplating Card */}
         <div
           style={{
-            backgroundColor: '#fff',
+            backgroundColor: 'rgba(255, 248, 225, 0.79)',
             padding: '30px',
             borderRadius: '12px',
             maxWidth: '400px',
             boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
             transition: 'transform 0.3s',
+            marginBottom: 0 // ensures no extra margin escapes
           }}
         >
           <h3 style={{ fontSize: '1.5rem', color: '#333', marginBottom: '15px' }}>

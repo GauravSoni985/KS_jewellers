@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const LiveRatesEmbed = () => {
   return (
@@ -8,15 +8,16 @@ const LiveRatesEmbed = () => {
       </h2>
 
       <iframe
+        // iframe is used for embedding another website/document
         src="http://www.ljplspot.com/"
         title="Live Rate"
         width="100%"
         height="600"
-        style={{ border: 'none' }}
+        style={{ border: "none" }}
       ></iframe>
 
       <p className="mt-4 text-sm text-gray-600">
-        Having trouble viewing?{' '}
+        Having trouble viewing?{" "}
         <a
           href="http://www.ljplspot.com/"
           target="_blank"

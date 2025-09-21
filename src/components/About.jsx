@@ -9,7 +9,7 @@ const About = () => {
       id="about"
       style={{
         padding: '60px 20px',
-        backgroundColor: '#fff',
+        backgroundColor: 'rgba(255, 248, 225, 0.94)',
         textAlign: 'center',
         color: '#333',
       }}
@@ -49,7 +49,7 @@ const About = () => {
           <h3 style={{ marginTop: '10px', fontSize: '1.2rem', color: '#222' }}>
             Kamlesh Soni
           </h3>
-          <h4 style={{ fontSize: '0.95rem', color: '#777' }}>
+          <h4 style={{ fontSize: '0.95rem', color: 'black' }}>
             (Contact for buying jewellery)
           </h4>
         </div>
@@ -70,7 +70,7 @@ const About = () => {
           <h3 style={{ marginTop: '10px', fontSize: '1.2rem', color: '#222' }}>
             Satish Soni
           </h3>
-          <h4 style={{ fontSize: '0.95rem', color: '#777' }}>
+          <h4 style={{ fontSize: '0.95rem', color: '#201a1aff' }}>
             (Contact for electroplating / silver coating)
           </h4>
         </div>
