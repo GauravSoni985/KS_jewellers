@@ -1,15 +1,37 @@
- HEAD
-# React + Vite
+# 💍 KS Jewellers Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern jewellery website for **KS Jewellers**, built with **React** and **Appwrite**.  
+The site showcases silver jewellery collections, founders, services (electroplating & manufacturing), and allows authenticated admins to upload and manage jewellery designs.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+### 🌐 Public Features
+- **Hero Section** – Welcomes visitors with a professional background image & call-to-action button.  
+- **About Section** – Introduction to the founders with photos and family representation.  
+- **Explore Section** – Information about jewellery buying, electroplating, and manufacturing services.  
+- **Gallery** – Dynamic display of uploaded jewellery designs (with images & prices).  
+- **Contact Section** – Phone numbers, shop & home addresses, and Google Maps integration.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project
-# KS_jewellers
- 2305a8a78108fc239450c0dfd139bbb0d30e2fe1
+### 🔐 Admin Features (via Appwrite)
+- **Authentication** – Secure login for admins (email/password).  
+- **Image Upload** – Upload jewellery designs with names & prices.  
+- **Database Management** – Jewellery details stored in Appwrite Database.  
+- **Gallery Sync** – Uploaded designs automatically appear in the Gallery section for all users.  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, JavaScript, Tailwind CSS (for styling)  
+- **Backend & Services:** [Appwrite](https://appwrite.io/)  
+  - Authentication (Admin Login)  
+  - Database (Design details storage)  
+  - Storage (Image uploads)  
+- **Deployment:** Vercel  
+
+---
+
+## 📂 Project Structure
+
