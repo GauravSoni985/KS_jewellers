@@ -53,6 +53,7 @@
   color: #f1f1f1;
   outline: none;
   transition: border 0.3s, background 0.3s;
+  box-sizing: border-box;
 }
 
 .login-box input:focus {
@@ -60,14 +61,40 @@
   background: #333333;
 }
 
-/* Button */
+/* Password input with icon */
+.password-container {
+  position: relative;   /* keeps icon inside */
+  width: 100%;
+}
+
+.password-container input {
+  padding-right: 40px;  /* make space for eye icon */
+}
+
+/* Eye icon inside input */
+.toggle-password-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #999;
+  user-select: none;
+}
+
+.toggle-password-icon:hover {
+  color: #b59d54; /* gold on hover */
+}
+
+/* Login button (gold with black text) */
 .login-button {
   width: 100%;
   padding: 0.8rem;
   border: none;
   border-radius: 6px;
-  background: #b59d54; /* gold premium */
-  color: #121212;
+  background: #b59d54; /* gold */
+  color: #121212;      /* black text */
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
@@ -77,4 +104,35 @@
 .login-button:hover {
   background: #a28945; /* darker gold */
   transform: translateY(-2px);
+}
+/* Button group - keep Login & Register aligned */
+.button-group {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+/* Register button (outlined style with gold hover) */
+.register-button {
+  flex: 1;
+  padding: 0.8rem;
+  border: 2px solid #b59d54; /* gold border */
+  border-radius: 6px;
+  background: transparent;    /* transparent background */
+  color: #b59d54;             /* gold text */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.register-button:hover {
+  background: #b59d54; /* gold fill on hover */
+  color: #121212;      /* black text */
+  transform: translateY(-2px);
+}
+
+/* Ensure login button takes equal space */
+.login-button {
+  flex: 1;
 }
